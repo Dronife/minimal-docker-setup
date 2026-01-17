@@ -32,7 +32,7 @@ services:
     ports:
       - "${DB_PORT}:3306"
     environment:
-      MYSQL_DATABASE: username
+      MYSQL_DATABASE: ${PROJECT_NAME}
       MYSQL_ROOT_PASSWORD: password
     volumes:
       - dbdata:/var/lib/mysql
